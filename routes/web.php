@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+///hola
+
+Route::get('/hola/{nombre}',function($nombre){
+    
+    return "hola {$nombre}";
+});
